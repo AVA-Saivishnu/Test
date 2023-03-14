@@ -1,7 +1,11 @@
-name: ci on:
+name: ci 
+
+on:
   push:
     branches:
-      - 'main' jobs:
+      - 'main' 
+      
+jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
@@ -22,4 +26,4 @@ name: ci on:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: avasaivishnu/ava-docker:latest
+          tags: saivishnu46/avasaivishnu:latest
